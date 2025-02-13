@@ -1,0 +1,14 @@
+# Sistema de liberação para evento com if, elif e else
+idade = float(input("Digite sua idade:"))
+valido = input("Você possui um ingresso válido (S para sim e N para não)")
+
+if idade >= 18 and valido == "S":
+  print("Pode entrar")
+elif idade < 18 and valido == "S":
+  resp = input("Seu responsável te acompanhará (S para sim e N para não)")
+  if resp == "S":
+    print("Pode entrar")
+  else:
+    print("Não pode entrar")
+else:
+  print("Não pode entrar")
